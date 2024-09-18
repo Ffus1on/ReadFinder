@@ -1,0 +1,162 @@
+* {
+    position: relative;
+    padding: 10px; /* Небольшой отступ для содержания */
+    box-sizing: border-box; /* Учитываем границы и отступы в общей ширине элемента */
+}
+
+/* Стиль подписей */
+*::before {
+    content: attr(data-tag);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.4); /* Увеличен opacity для более заметного фона */
+    color: rgba(255, 255, 255, 0.9); /* Сделан текст более заметным */
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    z-index: 100;
+    white-space: nowrap;
+}
+
+/* Установка z-index для предотвращения наложения */
+html {
+    outline: 2px dashed lightblue;
+    z-index: 1;
+    margin-bottom: 20px; /* Добавлено пространство снизу */
+}
+
+body {
+    outline: 2px dashed blue;
+    background-color: #e3f2fd;
+    padding: 20px; /* Увеличен отступ */
+    position: relative; /* Чтобы внутренние элементы могли быть позиционированы относительно body */
+    z-index: 2;
+}
+
+header {
+    outline: 2px solid blue;
+    background-color: #bbdefb;
+    margin-bottom: 20px; /* Добавлено пространство снизу */
+    position: relative; /* Чтобы внутренние элементы могли быть позиционированы относительно header */
+    z-index: 3;
+}
+
+/* Остальные элементы остаются без изменений */
+
+nav {
+    outline: 2px solid purple;
+    background-color: #e1bee7;
+    padding: 10px;
+}
+
+main {
+    outline: 2px solid green;
+    background-color: #c8e6c9;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+section {
+    outline: 2px solid orange;
+    background-color: #ffe0b2;
+    padding: 10px;
+}
+
+article {
+    outline: 2px solid red;
+    background-color: #ffcdd2;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    outline: 2px solid lightgreen;
+    background-color: #dcedc8;
+    padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    outline: 2px solid pink;
+}
+
+p {
+    outline: 2px solid yellow;
+    padding: 5px;
+}
+
+a {
+    outline: 2px solid cyan;
+    color: blue;
+    text-decoration: underline;
+}
+
+ul, ol {
+    outline: 2px solid teal;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+li {
+    outline: 2px solid lightcoral;
+    margin: 5px 0;
+}
+
+table {
+    outline: 2px solid darkgreen;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    outline: 2px solid brown;
+    padding: 5px;
+    text-align: left;
+}
+
+img {
+    outline: 2px solid violet;
+    padding: 5px;
+}
+
+form {
+    outline: 2px solid olive;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input, button, textarea, select {
+    outline: 2px solid darkorange;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+/* Добавляем имена элементов */
+html::before { content: "<html>"; background-color: rgba(173, 216, 230, 0.5); }
+body::before { content: "<body>"; background-color: rgba(135, 206, 250, 0.5); }
+header::before { content: "<header>"; background-color: rgba(187, 222, 251, 0.5); }
+nav::before { content: "<nav>"; background-color: rgba(225, 190, 231, 0.5); }
+main::before { content: "<main>"; background-color: rgba(200, 230, 201, 0.5); }
+section::before { content: "<section>"; background-color: rgba(255, 224, 178, 0.5); }
+article::before { content: "<article>"; background-color: rgba(255, 205, 210, 0.5); }
+footer::before { content: "<footer>"; background-color: rgba(220, 237, 200, 0.5); }
+h1::before { content: "<h1>"; background-color: rgba(255, 182, 193, 0.5); }
+h2::before { content: "<h2>"; background-color: rgba(255, 182, 193, 0.5); }
+h3::before { content: "<h3>"; background-color: rgba(255, 182, 193, 0.5); }
+h4::before { content: "<h4>"; background-color: rgba(255, 182, 193, 0.5); }
+h5::before { content: "<h5>"; background-color: rgba(255, 182, 193, 0.5); }
+h6::before { content: "<h6>"; background-color: rgba(255, 182, 193, 0.5); }
+p::before { content: "<p>"; background-color: rgba(255, 255, 102, 0.5); }
+a::before { content: "<a>"; background-color: rgba(173, 216, 230, 0.5); }
+ul::before { content: "<ul>"; background-color: rgba(0, 128, 128, 0.5); }
+ol::before { content: "<ol>"; background-color: rgba(0, 128, 128, 0.5); }
+li::before { content: "<li>"; background-color: rgba(240, 128, 128, 0.5); }
+table::before { content: "<table>"; background-color: rgba(34, 139, 34, 0.5); }
+td::before { content: "<td>"; background-color: rgba(139, 69, 19, 0.5); }
+th::before { content: "<th>"; background-color: rgba(139, 69, 19, 0.5); }
+img::before { content: "<img>"; background-color: rgba(238, 130, 238, 0.5); }
+form::before { content: "<form>"; background-color: rgba(128, 128, 0, 0.5); }
+input::before { content: "<input>"; background-color: rgba(255, 165, 0, 0.5); }
+button::before { content: "<button>"; background-color: rgba(255, 165, 0, 0.5); }
+textarea::before { content: "<textarea>"; background-color: rgba(255, 165, 0, 0.5); }
+select::before { content: "<select>"; background-color: rgba(255, 165, 0, 0.5); }
