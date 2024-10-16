@@ -11,23 +11,27 @@
     <body>
 
         <header>
-            <div id="logo">
-                <img src="images/bookLogo.svg" alt="изображение лого">
-                <h1>ReadFinder</h1>
+            <div id="base-header">
+                <div id="logo-text">
+                    <a href="index.html">
+                        <img src="images/bookLogo.svg" alt="изображение лого">
+                    </a>
+                    <h1>ReadFinder</h1>
+                </div>
+                <h2 id="slog">Поможем с выбором книги и места для работы</h2>
+                <button id="login">
+                    <img src="images/loginLogo.svg" alt="Иконка">
+                    Войдите в свой аккаунт
+                </button>
             </div>
-            <h2 id="slog">Поможем с выбором книги и места для работы</h2>
-            <button id="login">
-                <img src="images/loginLogo.svg" alt="Иконка">
-                Войдите в свой аккаунт
-            </button>
 
             <nav>
                 <ol>
-                    <li><a href="#addresses">Адреса наших библиотек</a></li>
-                    <li><a href="#favorites">Избранные книги</a></li>
-                    <li><a href="#card">Читательский билет</a></li>
-                    <li><a href="#workspaces">WorkSpaces</a></li>
-                    <li><a href="#catalog">Каталог книг</a></li>
+                    <li><a href="#addresses" class="gradient-links">Адреса наших библиотек</a></li>
+                    <li><a href="#favorites" class="gradient-links">Избранные книги</a></li>
+                    <li><a href="#card" class="gradient-links">Читательский билет</a></li>
+                    <li><a href="#workspaces" class="gradient-links">WorkSpaces</a></li>
+                    <li><a href="#catalog" class="gradient-links">Каталог книг</a></li>
                 </ol>
             </nav>
 
@@ -83,6 +87,32 @@
                 </section>
             </div>
 
+            <section id="book-stats">
+                <h2>Статистика по популярным книгам</h2>
+                <div id="book-table">
+                    <div class="header">Название</div>
+                    <div class="header">Автор</div>
+                    <div class="header">Количество страниц</div>
+                    <div class="header">Средний рейтинг</div>
+
+                    <div class="row">Опасная игра бабули</div>
+                    <div class="row">Иван Иванов</div>
+                    <div class="row">250</div>
+                    <div class="row">4.5</div>
+
+                    <div class="row">Скитальцы</div>
+                    <div class="row">Петр Петров</div>
+                    <div class="row">310</div>
+                    <div class="row">4.8</div>
+
+                    <div class="row">Волоколамское шоссе</div>
+                    <div class="row">Николай Николаев</div>
+                    <div class="row">280</div>
+                    <div class="row">4.7</div>
+                </div>
+            </section>
+
+
             <section id="map">
                 <h2>Найдите ближайшую библиотеку</h2>
                 <div id="map-container">
@@ -95,7 +125,6 @@
                 </div>
             </section>
 
-
         </main>
 
         <footer>
@@ -107,10 +136,10 @@
             </section>
             <section id="social-media">
                 <h3>Мы в соцсетях</h3>
-                <p><a href="#">Лицобук</a></p>
-                <p><a href="#">Запрещеннограмм</a></p>
-                <p><a href="#">Завтыкал</a></p>
-                <p><a href="#">Вконтакте</a></p>
+                <p><a class="gradient-links" href="#">Лицобук</a></p>
+                <p><a class="gradient-links" href="#">Запрещеннограмм</a></p>
+                <p><a class="gradient-links" href="#">Завтыкал</a></p>
+                <p><a class="gradient-links" href="#">Вконтакте</a></p>
             </section>
             <section id="newsletter">
                 <h3>Подпишитесь на рассылку</h3>
