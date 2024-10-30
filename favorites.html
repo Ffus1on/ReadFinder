@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <link rel="stylesheet" href="styles/favorites.css">
+  <link rel="stylesheet" href="styles/highlight.css">
+  <meta charset="UTF-8">
+  <meta name="description" content="Страница для поиска информации о книге, библиотеках и вакансий в библиотеках">
+  <meta name="keywords" content="книга, вакансия, библиотека, коворкинг, чтение, изучение">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReadFinder</title>
+  <script src="javascript/button-highlight.js" defer></script>
+  <script src="javascript/menu-highlight.js" defer></script>
+</head>
+<body>
+    <header>
+      <div id="base-header">
+        <div id="logo-text">
+          <a href="index.html">
+            <img src="images/bookLogo.svg" alt="изображение лого">
+          </a>
+          <h1>ReadFinder</h1>
+        </div>
+        <h2 id="slog">Поможем с выбором книги и места для работы</h2>
+        <button id="login">
+          <img src="images/loginLogo.svg" alt="Иконка">
+          Войдите в свой аккаунт
+        </button>
+      </div>
+
+      <nav>
+        <ol id="navigation-links">
+          <li><a href="addresses.html" class="gradient-links">Адреса наших библиотек</a></li>
+          <li><a href="favorites.html" class="gradient-links">Избранные книги</a></li>
+          <li><a href="library-card.html" class="gradient-links">Читательский билет</a></li>
+          <li><a href="workspaces.html" class="gradient-links">WorkSpaces</a></li>
+          <li><a href="catalog.html" class="gradient-links">Каталог книг</a></li>
+        </ol>
+      </nav>
+
+      <form action="#login" method="get">
+        <input type="text" placeholder="Искать на BookFinder">
+        <button type="submit">Поиск</button>
+      </form>
+    </header>
+
+    <main>
+      <p id="not-logged-in">Вы пока не авторизованы! Авторизуйтесь в правом верхнем углу, чтобы получить полный доступ к функционалу сайта!</p>
+    </main>
+
+</body>
+</html>

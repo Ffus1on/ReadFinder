@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <link rel="stylesheet" href="styles/template.css">
+  <link rel="stylesheet" href="styles/highlight.css">
+  <link rel="stylesheet" href="styles/addresses.css">
+  <meta charset="UTF-8">
+  <meta name="description" content="Страница для поиска информации о книге, библиотеках и вакансий в библиотеках">
+  <meta name="keywords" content="книга, вакансия, библиотека, коворкинг, чтение, изучение">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReadFinder</title>
+  <script src="javascript/button-highlight.js" defer></script>
+  <script src="javascript/menu-highlight.js" defer></script>
+</head>
+<body>
+  <header>
+    <div id="base-header">
+      <div id="logo-text">
+        <a href="index.html">
+          <img src="images/bookLogo.svg" alt="изображение лого">
+        </a>
+        <h1>ReadFinder</h1>
+      </div>
+      <h2 id="slog">Поможем с выбором книги и места для работы</h2>
+      <button id="login">
+        <img src="images/loginLogo.svg" alt="Иконка">
+        Войдите в свой аккаунт
+      </button>
+    </div>
+
+    <nav>
+      <ol id="navigation-links">
+        <li><a href="addresses.html" class="gradient-links">Адреса наших библиотек</a></li>
+        <li><a href="favorites.html" class="gradient-links">Избранные книги</a></li>
+        <li><a href="library-card.html" class="gradient-links">Читательский билет</a></li>
+        <li><a href="workspaces.html" class="gradient-links">WorkSpaces</a></li>
+        <li><a href="catalog.html" class="gradient-links">Каталог книг</a></li>
+      </ol>
+    </nav>
+
+    <form action="#login" method="get">
+      <input type="text" placeholder="Искать на BookFinder">
+      <button type="submit">Поиск</button>
+    </form>
+  </header>
+
+  <main>
+    <section id="places">
+      <h3>Места на карте</h3>
+      <ul id="all-places">
+        <li>Юношеская библиотека им. А. П. Гайдара</li>
+        <li>Центральная районная детская библиотека</li>
+        <li>Санкт-Петербургская Государственная специальная центральная библиотека для слепых и слабовидящих</li>
+        <li>Библиотека им. Б. Лавренёва</li>
+        <li>Детская библиотека № 2</li>
+        <li>Библиотека книжных героев</li>
+        <li>Центральная районная библиотека имени А. С. Пушкина</li>
+        <li>Библиотека имени В. И. Ленина</li>
+        <li>3-я Районная библиотека</li>
+      </ul>
+    </section>
+    <section id="map">
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A86622176465eceaf7da85390942378d9879f2b0e415880adba91117fdd1f2b6a&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <section id="contact-information">
+      <h3>Контактная информация</h3>
+      <p>📍 Адрес: ул. Примерная, 1, Москва, Россия</p>
+      <p>📞 Телефон: +7 (495) 123-45-67</p>
+      <p>✉️ Email: info@readfinder.ru</p>
+    </section>
+    <section id="social-media">
+      <h3>Мы в соцсетях</h3>
+      <p><a class="gradient-links" href="#">Лицобук</a></p>
+      <p><a class="gradient-links" href="#">Запрещеннограмм</a></p>
+      <p><a class="gradient-links" href="#">Завтыкал</a></p>
+      <p><a class="gradient-links" href="#">Вконтакте</a></p>
+    </section>
+    <section id="newsletter">
+      <h3>Подпишитесь на рассылку</h3>
+      <form action="#" method="post">
+        <input type="email" name="email" placeholder="Ваш email" required>
+        <button type="submit">Подписаться</button>
+      </form>
+    </section>
+  </footer>
+</body>
+</html>

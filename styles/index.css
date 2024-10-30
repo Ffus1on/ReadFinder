@@ -27,20 +27,43 @@ h2 {
     padding: 10px 20px;
 }
 
-#login {
+#login{
+    font: lighter 16px Inter;
+    background-color: #F8E1C7;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: #2F0571;
-    color: black;
+    align-items: center;
     border: none;
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: pointer;
 }
 
-#login img {
+#login img{
     margin-right: 10px;
+    width: 17px;
+    height: 17px;
+}
+header form [type="text"], header form [type="submit"] {
+    font: lighter 16px Inter;
+    background-color: #F8E1C7;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2F0571;
+    opacity: 0.5;
+}
+header form [type="text"]{
+    width: 100%;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+header form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
@@ -99,43 +122,6 @@ ol li img{
     height: auto;
     border-radius: 8px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5)
-}
-
-#login{
-    font: lighter 16px Inter;
-    background-color: #F8E1C7;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 0;
-    cursor: pointer;
-}
-
-#login img{
-    width: 17px;
-    height: 17px;
-}
-header form [type="text"], header form [type="submit"] {
-    font: lighter 16px Inter;
-    background-color: #F8E1C7;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #2F0571;
-    opacity: 0.5;
-}
-header form [type="text"]{
-    width: 100%;
-    padding-left: 10px;
-    margin-right: 10px;
-}
-
-header form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #books-and-ads {
