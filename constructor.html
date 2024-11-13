@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <link rel="stylesheet" href="styles/template.css">
+  <link rel="stylesheet" href="styles/highlight.css">
+  <link rel="stylesheet" href="styles/constructor.css">
+  <meta charset="UTF-8">
+  <meta name="description" content="Страница для создания расписаний чтения и мероприятий в библиотеке">
+  <meta name="keywords" content="книга, вакансия, библиотека, коворкинг, чтение, изучение">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Конструктор расписаний - ReadFinder</title>
+  <script src="javascript/button-highlight.js" defer></script>
+  <script src="javascript/menu-highlight.js" defer></script>
+  <script src="javascript/constructor.js" defer></script>
+</head>
+<body>
+<header>
+  <div id="base-header">
+    <div id="logo-text">
+      <a href="index.html">
+        <img src="images/bookLogo.svg" alt="изображение лого">
+      </a>
+      <h1>ReadFinder</h1>
+    </div>
+    <h2 id="slog">Поможем с выбором книги и места для работы</h2>
+    <button id="login">
+      <img src="images/loginLogo.svg" alt="Иконка">
+      Войдите в свой аккаунт
+    </button>
+  </div>
+
+  <nav>
+    <ol id="navigation-links">
+      <li><a href="addresses.html" class="gradient-links">Адреса наших библиотек</a></li>
+      <li><a href="favorites.html" class="gradient-links">Избранные книги</a></li>
+      <li><a href="library-card.html" class="gradient-links">Читательский билет</a></li>
+      <li><a href="workspaces.html" class="gradient-links">WorkSpaces</a></li>
+      <li><a href="catalog.html" class="gradient-links">Каталог книг</a></li>
+      <li><a href="constructor.html" class="gradient-links">Конструктор расписаний</a></li>
+    </ol>
+  </nav>
+
+  <form action="#login" method="get">
+    <input type="text" placeholder="Искать на ReadFinder">
+    <button type="submit">Поиск</button>
+  </form>
+</header>
+
+<main>
+  <h2>Конструктор расписаний</h2>
+  <form id="schedule-form">
+    <label for="date">Дата мероприятия:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Время:</label>
+    <input type="time" id="time" name="time" required>
+
+    <label for="event">Название мероприятия:</label>
+    <input type="text" id="event" name="event" placeholder="Например, мастер-класс по чтению" required>
+
+    <button type="submit" id="add">Добавить в расписание</button>
+  </form>
+
+  <h3>Ваше расписание:</h3>
+  <div id="schedule-container"></div>
+</main>
+
+<footer>
+  <section id="contact-information">
+    <h3>Контактная информация</h3>
+    <p>📍 Адрес: ул. Примерная, 1, Москва, Россия</p>
+    <p>📞 Телефон: +7 (495) 123-45-67</p>
+    <p>✉️ Email: info@readfinder.ru</p>
+  </section>
+  <section id="social-media">
+    <h3>Мы в соцсетях</h3>
+    <p><a class="gradient-links" href="#">Лицобук</a></p>
+    <p><a class="gradient-links" href="#">Запрещеннограмм</a></p>
+    <p><a class="gradient-links" href="#">Завтыкал</a></p>
+    <p><a class="gradient-links" href="#">Вконтакте</a></p>
+  </section>
+  <section id="newsletter">
+    <h3>Подпишитесь на рассылку</h3>
+    <form action="#" method="post">
+      <input type="email" name="email" placeholder="Ваш email" required>
+      <button type="submit">Подписаться</button>
+    </form>
+  </section>
+</footer>
+</body>
+</html>
