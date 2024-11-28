@@ -28,3 +28,30 @@ main {
     width: 100%; 
     display: block; 
 }
+
+/*
+    lab-7
+*/
+
+.toast-success {
+    background-color: #4caf50 !important;
+    color: #fff !important;
+}
+.toast-error {
+    background-color: #f44336 !important;
+    color: #fff !important;
+}
+
+.reservation-modal-title {
+    background-color: #6a1b9a;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 0;
+    display: inline-block;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
